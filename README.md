@@ -20,13 +20,25 @@ Generate full-length novels with AI! Harness the power of large language models 
 
 Getting started with AI Story Generator is easy:
 
-1. Clone the repository
-2. Install [Ollama](https://ollama.com/) for local model support
-3. Run the generator:
+1. Clone the repository.
+2. Install [Ollama](https://ollama.com/) for local model support.
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Run the application:
 
-```sh
-./Write.py -Prompt Prompts/YourChosenPrompt.txt
-```
+   ### Option A: Launch the Web GUI (Recommended)
+   Start the interactive Web GUI:
+   ```sh
+   streamlit run app.py
+   ```
+
+   ### Option B: Run via CLI
+   Run the command-line writer:
+   ```sh
+   python Write.py -Prompt Prompts/YourChosenPrompt.txt
+   ```
 
 That's it! The system will automatically download any required models and start generating your story.
 
